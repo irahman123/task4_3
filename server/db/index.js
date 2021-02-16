@@ -10,15 +10,6 @@ const pool = mysql.createPool({
 });
 
 let tempdb = {};
-let id = 200
-function randomTemparature(max, min){
-    return Math.round(Math.random()*(max-min)+min);
-};
-
-function getId(){
-    return id++;
-}
-
 
 tempdb.all = () => {
     
@@ -32,17 +23,6 @@ tempdb.all = () => {
         })
     })
 }
-    
-       /*setInterval(() => { 
-            pool.query('INSERT INTO `temperature`(`Id`, `Temperature`, `Timestamp`) VALUES ("'+getId()+'","'+randomTemparature(50, 0).toString()+'", CURRENT_TIMESTAMP) ',  (err, results)=>{
-                if(err) {
-                    return reject(err);
-                }
-                return resolve(results);
-            })
-        }, 20000);    });
-};*/
 
 module.exports = tempdb;
 
-//SELECT `Id`, `Temperature`, `Timestamp` FROM `temperature` ORDER BY `Timestamp` ASC LIMIT 5

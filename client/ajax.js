@@ -20,5 +20,7 @@ function loadJSONDoc() {
   }
 
  document.addEventListener("DOMContentLoaded", function(event) {
+	loadJSONDoc();
 	setInterval(loadJSONDoc, 60000) //updating temp data in every 60 second
+	//loadJSONDoc();
   });

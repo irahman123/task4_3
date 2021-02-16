@@ -1,5 +1,5 @@
 Author: Mohammad Imranur Rahman
-Course name : Software Development for the Web
+Course name: Software Development for the Web
 Institute: Kristianstad University
 Teacher: Fredrik Stridh
 
@@ -19,3 +19,6 @@ There are many rows with different temperatures to the database.
 
 Created a simple webpage that will display a table with the latest 5 measurements.
 Used an AJAX request towardsthe backend to fetch only the temperature data and then update the page with the latest 5 measurements every 60 seconds.
+
+
+**// here I added mysql files ,(copied from xampp folder), I'm not sure, if it's ok for you to test.
